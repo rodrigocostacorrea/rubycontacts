@@ -1,0 +1,58 @@
+<div class="basic-grey">
+
+  <h1><%= t('forms.contact') %></h1>
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.contact.name') %></strong>
+    <%= @contact.name %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.contact.email') %></strong>
+    <%= @contact.email %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.contact.kind') %></strong>
+    <%= @contact.kind.description %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.address.street') %></strong>
+    <%= @contact.address.street %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.address.city') %></strong>
+    <%= @contact.address.city %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.address.state') %></strong>
+    <%= @contact.address.state %>
+  </p>
+
+  <% @contact.phones.each do |p| %>
+    <p>
+      <strong><%= t('activerecord.attributes.phone.phone') %></strong>
+      <%= p.phone %>
+    </p>
+  <% end %>
+
+  <p>
+    <strong><%= t('activerecord.attributes.contact.rmk') %></strong>
+    <%= @contact.rmk %>
+  </p>
+
+  <div class="actions">
+    <table>
+      <tr>
+        <td><%= link_to t('buttons.edit'), edit_contact_path(@contact), class: "btn btn-outline-warning" %></td>
+        <td><%= link_to t('buttons.back'), contacts_path, class: "btn btn-outline-info"  %></td>
+      </tr>
+    </table>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="basic-grey">
+
+  <h1><%= t('forms.kind') %></h1>
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong><%= t('activerecord.attributes.kind.description') %></strong>
+    <%= @kind.description %>
+  </p>
+
+  <div class="actions">
+    <table>
+      <tr>
+        <td><%= link_to t('buttons.edit'), edit_kind_path(@kind), class: "btn btn-outline-warning" %></td>
+        <td><%= link_to t('buttons.back'), kinds_path, class: "btn btn-outline-info"  %></td>
+      </tr>
+    </table>
+  </div>
+
+</div>

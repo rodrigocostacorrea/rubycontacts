@@ -1,0 +1,41 @@
+/* Basic Grey */
+.basic-grey {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  background: #F7F7F7;
+  padding: 25px 15px 25px 10px;
+  font-size: 18px;
+  color: #888;
+  border: 1px solid #E4E4E4;
+  display: table;
+  min-width: 500px;
+}
+.index {
+  width: 500px !important;
+}
+.basic-grey h1 {
+  font-size: 25px;
+  padding: 0px 0px 10px 40px;
+  display: block;
+  margin: -10px -15px 30px -10px;;
+  color: #888;
+}
+.actions {
+  margin: 0px auto;
+  width: 330px;
+  text-align: center;
+  margin-top: 10px;
+}
+.basic-grey table {
+  width: 100%;
+}
+.basic-grey table td {
+  text-align: center;
+}
+.pagination-info {
+  display: inline-block;
+  margin-bottom: 10px;
+}

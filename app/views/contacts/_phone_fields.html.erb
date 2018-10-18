@@ -1,0 +1,11 @@
+<div class="nested-fields">
+  <div class="form-group row">
+    <%= f.label :phone, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-8">
+      <%= f.text_field :phone, class: "form-control" %>
+    </div>
+    <div class="col-sm-2">
+      <%= link_to_remove_association '[ x ]', f, class: "btn btn-outline-danger" %>
+    </div>
+  </div>
+</div>

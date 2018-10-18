@@ -1,0 +1,30 @@
+"pt-BR":
+
+  buttons:
+    home: "Início"
+    new: "Novo"
+    show: "Mostrar"
+    edit: "Editar"
+    destroy: "Apagar"
+    back: "Voltar"
+    save: "Salvar"
+    add_phone: "[ + Telefone ]"
+
+  forms:
+    contact: "Contato"
+    address: "Endereço"
+    kind: "Tipo"
+    phone: "Telefone"
+
+  messages:
+    welcome: "Seja Bem-Vindo!"
+    delete_confirmation: "Tem certeza que deseja remover esse registro ?"
+    listing: "Listando"
+    created: "Registro criado com sucesso!"
+    updated: "Registro atualizado com sucesso!"
+    destroyed: "Registro removido com sucesso!"
+
+  texts:
+    size: "Quantidade"
+    contact: "Contatos"
+    add_phone_label: ""

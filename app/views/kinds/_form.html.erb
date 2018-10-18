@@ -1,0 +1,29 @@
+<%= form_with(model: kind, local: true, html: { class: "basic-grey" }) do |form| %>
+
+  <h1><%= t('forms.kind') %></h1>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <table>
+      <tr>
+        <td><%= link_to t('buttons.back'), kinds_path, class: "btn btn-outline-info" %></td>
+        <td><%= form.submit t('buttons.save'), class: "btn btn-outline-success" %></td>
+      </tr>
+    </table>
+  </div>
+
+  <% if kind.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% kind.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<% end %>
